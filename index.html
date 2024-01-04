@@ -20,7 +20,8 @@
                 <li>Aggreableness: willingness to compromise self-interests for others</li>
             </ul>
             Note that these personality traits are not moral virtues, meaning there is no "good" and "bad" point on any of the 5 personality dimensions.
-            More details about how the "Big 5" was constructed will be added in the Appendix section at the end of the page. Below is a self-assessment survey that reveals where you are (percentile wise) on the 5 personality dimensions. Details about the data and statistical method used for this self-assessment test will be added in the Appendix section.
+            Details are included in the Appendix section at the end of the page.
+            Below is a self-assessment survey that reveals where you are (percentile wise) on the 5 personality dimensions.
         </p>
 
         <p>
@@ -97,8 +98,8 @@
         <br>
         <br>
 
+        <h2>Result</h2>
         <p>
-            <b>Result:</b>
             <table>
                 <tr><th>Trait</th><th>Percentile</th></tr>
                 <tr><td>Extraversion (high = extravert)</td><td id="ext_res"></td></tr>
@@ -112,8 +113,20 @@
 		<br>
 		<br>
 	
+        <h2>Appendix:</h2>
         <p>
-            <b>Appendix:</b> TBD
+            <b>Big 5 Personality Traits:</b>
+            <br> 
+            The construction of the Big 5 Personality model is as follows. A survery asking all possible questions about human behavior and thought was administered. The data is then factor analyzed (Principal Component Analysis, PCA) and it turns out that there are 5 main orthogonal dimensions corresponding to the big 5 personality traits above. 
+            <br>
+            Reference: <a href="https://en.wikipedia.org/wiki/Big_Five_personality_traits">Wikipedia</a>
+            <br>
+            <br>
+            <b>This webapp:</b>
+            <br>
+            The math procedure done by this webapp is as follows. There are 10 questions per personality dimension. The score for each statement is collected and scaled (subtract by mean and divide by stand deviation), where mean and standard deviation are computed from a precollected data set of 1013558 samples. The raw overall score for each dimension is then computed as a linear combination of the scaled scores for the statements corresponding to said dimension. The weights in the linear combination is computed using PCA over the dataset. The final percentile on each dimension is calculated as CDF of a normal distribution where the mean and standard deviation is extracted from the dataset.
+            <br>
+            Dataset Source: <a href="https://openpsychometrics.org/_rawdata/">Answers to the IPIP Big Five Factor Markers</a>
         </p>
 
 		<br>
