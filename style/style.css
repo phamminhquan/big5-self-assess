@@ -1,0 +1,30 @@
+table {
+	width: 900px
+}
+
+caption {
+	font-size: large;
+	font-weight: bold;
+	font-variant: small-caps
+}
+
+th {
+	text-align: left
+}
+
+table, th, td {
+	border: 1px solid #000;
+	border-collapse: collapse
+}
+
+th, td {
+	padding: 10px
+}
+
+tr:nth-child(even) {
+	background-color: #fff
+}
+
+tr:nth-child(odd) {
+	background-color: #ddd
+}
